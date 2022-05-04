@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+    rel="icon"
+    href="/logo.png"
+    type="image/x-icon"
+  />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding + Gaming</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks" id="new" onclick="openCity(event, 'Home')">Home</button>
+        <button class="tablinks" id="old" onclick="openCity(event, 'Games')">Games</button>
+        <button class="tablinks" id="old" onclick="openCity(event, 'coding')">Coding</button>
+      </div>
+      
+      <div id="Home" class="tabcontent">
+        <h1>Home</h1>
+      </div>
+      
+      <div id="Games" class="tabcontent">
+        <iframe src="games/games.html" style="width: 100%; min-height: 800px;"></iframe>
+      </div>
+      <div id="coding" class="tabcontent">
+        <iframe src="coding/coding.html" style="width: 100%; min-height: 800px;"></iframe>
+      </div>
+    <script src="website.js"></script>
+</body>
+</html>
