@@ -1,0 +1,26 @@
+.topBtn:active {
+    box-shadow: none;
+    padding: 15px;
+  }
+  
+.topBtn:hover {
+    background-color: black;
+    color: white;
+  }
+
+.center {
+    text-align: center;
+}
+
+h2 {
+    text-transform: capitalize;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+iframe {
+    height: 500px;
+    width: 100%
+}
