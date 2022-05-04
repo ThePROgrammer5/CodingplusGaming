@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <link
+    rel="icon"
+    href="img/Sanke.png"
+    type="image/x-icon"
+  />
+  <script src="https://kit.fontawesome.com/9361569a0e.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slither Snake</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas{
+            box-shadow: black 20px 10px 50px;
+        }
+        #thumb {
+            box-shadow: black 20px 10px 50px;
+            margin: 0px;
+            z-index: 3;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+        #play {
+            cursor: pointer;
+            margin: 0px;
+            z-index: 3;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #controlls {
+            cursor: pointer;
+            margin: 0px;
+            z-index: 4;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+        #retry {
+            cursor: pointer;
+            margin: 0px;
+            z-index: 3;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>  
+    
+</head>
+
+<body>   
+    <img style="display: none; height: 400px;" style="height: 400px;" id="controlls" src="img/controlls.png">
+    <h3 style="font-family: 'Hurricane', cursive; font-size: 200px; margin: 0;" id="title2">Slither</h3>
+    <img src="img/title.png" id="title" style="width: 600px; margin: 0;">
+    <div id="thumb">
+    <img style="width: 400px; height: 400px" src="img/Snake Game Thumb.png"> 
+    </div>
+    <img onclick="play()" style="height: 200px;" id="play" src="img/play.png">
+    <img style="display: none; height: 200px;" onclick="retry()" style="height: 200px;" id="retry" src="img/retry.png">
+    <p id="description">
+    Slither Snake, the <u><b>AWSOME</b></u> game above <b><i class="fa-solid fa-arrow-up"></i><i class="fa-solid fa-arrow-up"></i><i class="fa-solid fa-arrow-up"></i></b> is created by <b><a href="The-PROgrammer.com" target="_blank">The PROgrammer.</a></b>
+    <br> Inspired by <b><a target="_blank" href="https://www.google.com/?safe=active&ssui=on">Google's</a></b> original game: <b><a href="https://www.google.com/search?q=snake&rlz=1CARLJX_enUS999&oq=snake&aqs=chrome..69i57j0i433i512j69i59j46i433i512j69i60j69i61j69i60j69i65.1219j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on" target="_blank">Snake</a></b>, it is a fun and easy-to-play game!
+    <br> The simple controlls are: 
+    <br>
+    <br> 
+    • Up arrow <i class="fa-solid fa-arrow-up"></i> or <b>W</b> to go up<br>
+    <br> 
+    • Down arrow <i class="fa-solid fa-arrow-down"></i> or <b>S</b> to go down<br>
+    <br> 
+    • Left arrow <i class="fa-solid fa-arrow-left"></i> or <b>A</b> to go left<br>
+    <br> 
+    • Right arrow <i class="fa-solid fa-arrow-right"></i> or <b>D</b> to go right<br>
+    <br> 
+    • avoid the worlds edges
+    <br>
+    <br>
+    • avoid your snakes body
+    <br>
+    <br>
+    • eat the apples
+    <br>
+    <br>
+    <u><b>AND ENJOY!!!!!!!!!!!!!!!!!!!!!!!</b></u>
+    </p>
+    <canvas hidden id="game" width="400" height="400"/>
+    <script src="index.js"></script>
+</body>
+</html>
