@@ -1,3 +1,5 @@
+![PROgrammer studios](PROgrammer-studios.png)
+
 # Welcome to coding+ gaming!
 
 ## You have tried the rest, go with the best!
