@@ -17,20 +17,27 @@ function handleScreenMode(game) {
     document.getElementById(game).style.display = "block";
 }
 
-const logo = "ThePROgrammer5/CodingplusGaming/logo.ico"
-const img = null;
-const text = "This is a test, do not worry.";
-const title = "TEST";
-const options = {
-    body: text,
-    icon: logo,
-    vibrate: [200, 100, 200],
-    tag: title,
-    image: img,
-    badge: null,
-    actions: [{ action: "Detail", title: "View", icon: logo }]
- };
+// Let's check if the browser supports notifications
+if (!("Notification" in window)) {
+  alert("This browser does not support desktop notification");
+}
 
-navigator.serviceWorker.ready.then(function(serviceWorker) {
-  serviceWorker.showNotification(title, options);
-});
+// Let's check whether notification permissions have already been granted
+else if (Notification.permission === "granted") {
+  // If it's okay let's create a notification
+  var notification = new Notification("Hi there!");
+}
+
+// Otherwise, we need to ask the user for permission
+else if (Notification.permission !== "denied") {
+  Notification.requestPermission().then(function (permission) {
+    // If the user accepts, let's create a notification
+    if (permission === "granted") {
+      var notification = new Notification("Hi there!");
+    }
+  });
+}
+
+// At last, if the user has denied notifications, and you
+// want to be respectful there is no need to bother them anymore.
+}
