@@ -23,3 +23,21 @@ function openCity(evt, cityName) {
       document.body.removeChild(loader);
     });
   });
+
+  function notifyMe(body, title, onclick) {
+    if (Notification.permission !== 'granted') {
+      Notification.requestPermission();
+    }
+    else {
+      var notification = new Notification(title, {
+      icon: 'img/favicon.jpg',
+      body: body,
+     });
+   }
+  };
+  
+  notifyMe("Hello!👋 Did you know we have an AWSOME game, perfect for YOU!? It's called: Slither Snake! Click this notification to play it!", "Hello👋!");
+  notification.onclick = function() {!
+    window.open('https://theprogrammer5.github.io/Slither-Snake-Offical-Website/');
+   };
+  
