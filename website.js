@@ -24,11 +24,13 @@ function openCity(evt, cityName, doSomthing) {
     });
   });
 
+  /*
 function doSomthing() {
     return window.open('https://theprogrammer5.github.io/Slither-Snake-Offical-Website/');
 }
+*/
 
-  function notifyMe(body, title, runFunctionOnNotification) {
+  function notifyMe(body, title, runFunctionOnNotification, open, tag) {
     if (Notification.permission !== 'granted') {
       Notification.requestPermission();
     }
@@ -36,9 +38,11 @@ function doSomthing() {
       var notification = new Notification(title, {
       icon: 'img/favicon.jpg',
       body: body,
+      open: open,
+      tag: tag,
      });
-     notification.onclick() = function() {runFunctionOnNotification()};
+     
    }
   };
   
-  notifyMe("Hello!👋 Did you know we have an AWSOME game, perfect for YOU!? It's called: Slither Snake! Click this notification to play it!", "Hello👋!", doSomthing);
+  notifyMe("Hello!👋 Did you know we have an AWSOME game, perfect for YOU!? It's called: Slither Snake! Click this notification to play it!", "Hello👋!", "https://theprogrammer5.github.io/Slither-Snake-Offical-Website/", slither-snake);
