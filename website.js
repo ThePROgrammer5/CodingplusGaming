@@ -1,6 +1,6 @@
 document.getElementById('new').click();
 
-function openCity(evt, cityName) {
+function openCity(evt, cityName, doSomthing) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -33,11 +33,9 @@ function openCity(evt, cityName) {
       icon: 'img/favicon.jpg',
       body: body,
      });
+     eval(doSomthing)
    }
   };
   
-  notifyMe("Hello!👋 Did you know we have an AWSOME game, perfect for YOU!? It's called: Slither Snake! Click this notification to play it!", "Hello👋!");
-  notification.onclick = function() {!
-    window.open('https://theprogrammer5.github.io/Slither-Snake-Offical-Website/');
-   };
+  notifyMe("Hello!👋 Did you know we have an AWSOME game, perfect for YOU!? It's called: Slither Snake! Click this notification to play it!", "Hello👋!", "notification.onclick = function() {window.open('https://theprogrammer5.github.io/Slither-Snake-Offical-Website/')};");
   
