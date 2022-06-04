@@ -28,7 +28,7 @@ function doSomthing() {
     window.open('https://theprogrammer5.github.io/Slither-Snake-Offical-Website/');
 }
 
-  function notifyMe(body, title, runFunctionOnNotification) {
+  function notifyMe(body, title, runFunctionOnNotification, trigger) {
     if (Notification.permission !== 'granted') {
       Notification.requestPermission();
     }
@@ -37,8 +37,8 @@ function doSomthing() {
       icon: 'img/favicon.jpg',
       body: body,
      });
-     notification.onclick = function() {runFunctionOnNotification()};
+     notification.addEventListener(trigger, runFunctionOnNotification());
    }
   };
   
-  notifyMe("Hello!👋 Did you know we have an AWSOME game, perfect for YOU!? It's called: Slither Snake! Click this notification to play it!", "Hello👋!", doSomthing);
+  notifyMe("Hello!👋 Did you know we have an AWSOME game, perfect for YOU!? It's called: Slither Snake! Click this notification to play it!", "Hello👋!", doSomthing, click);
