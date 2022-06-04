@@ -30,7 +30,7 @@ function doSomthing() {
 }
 */
 
-  function notifyMe(body, title, runFunctionOnNotification, open, tag) {
+  function notifyMe(body, title, runFunctionOnNotification, /*open,*/ tag) {
     if (Notification.permission !== 'granted') {
       Notification.requestPermission();
     }
@@ -41,8 +41,8 @@ function doSomthing() {
       open: open,
       tag: tag,
      });
-     window.localStorage.setItem(tag, tag);
+     window.localStorage.setItem(tag, tag)
    }
   };
   
-  notifyMe("Hello!👋 Did you know we have an AWSOME game, perfect for YOU!? It's called: Slither Snake! Click this notification to play it!", "Hello👋!", "https://theprogrammer5.github.io/Slither-Snake-Offical-Website/", slither-snake);
+  notifyMe("Hello!👋 Did you know we have an AWSOME game, perfect for YOU!? It's called: Slither Snake! Click this notification to play it!", /*"Hello👋!", "https://theprogrammer5.github.io/Slither-Snake-Offical-Website/",*/ slither-snake);
