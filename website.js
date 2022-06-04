@@ -41,7 +41,7 @@ function doSomthing() {
       open: open,
       tag: tag,
      });
-     
+     window.localStorage.setItem(tag, tag);
    }
   };
   
