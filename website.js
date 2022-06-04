@@ -25,7 +25,7 @@ function openCity(evt, cityName, doSomthing) {
   });
 
 function doSomthing() {
-    window.open('https://theprogrammer5.github.io/Slither-Snake-Offical-Website/');
+    return window.open('https://theprogrammer5.github.io/Slither-Snake-Offical-Website/');
 }
 
   function notifyMe(body, title, runFunctionOnNotification) {
@@ -37,7 +37,7 @@ function doSomthing() {
       icon: 'img/favicon.jpg',
       body: body,
      });
-     notification.onclick(function() {runFunctionOnNotification()}); 
+     notification.onclick() = function() {runFunctionOnNotification()};
    }
   };
   
