@@ -37,7 +37,7 @@ function doSomthing() {
       icon: 'img/favicon.jpg',
       body: body,
      });
-     notification.onclick = runFunctionOnNotification();
+     notification.onclick = function() {runFunctionOnNotification()};
    }
   };
   
