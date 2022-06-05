@@ -24,12 +24,6 @@ function openCity(evt, cityName, doSomthing) {
     });
   });
 
-  /*
-function doSomthing() {
-    return window.open('https://theprogrammer5.github.io/Slither-Snake-Offical-Website/');
-}
-*/
-
   function notifyMe(body, title, runFunctionOnNotification, link) {
     if (Notification.permission !== 'granted') {
       Notification.requestPermission();
@@ -39,7 +33,9 @@ function doSomthing() {
       icon: 'img/favicon.jpg',
       body: body,
      });
-     notification.onclick = function()
+     notification.onclick = function() {
+      window.open(link)
+     }
    }
   };
   
