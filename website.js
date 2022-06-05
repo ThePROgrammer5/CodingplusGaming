@@ -45,4 +45,4 @@ function doSomthing() {
    }
   };
   
-  notifyMe("Hello!👋 Did you know we have an AWSOME game, perfect for YOU!? It's called: Slither Snake! Click this notification to play it!", "Hello👋!", /*"https://theprogrammer5.github.io/Slither-Snake-Offical-Website/",*/ slither-snake);
+  notifyMe("Hello!👋 Did you know we have an AWSOME game, perfect for YOU!? It's called: Slither Snake! Click this notification to play it!", "Hello👋!", "https://theprogrammer5.github.io/Slither-Snake-Offical-Website/");
