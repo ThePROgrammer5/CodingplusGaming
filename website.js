@@ -24,7 +24,7 @@ function openCity(evt, cityName, doSomthing) {
     });
   });
 
-  function notifyMe(body, title, runFunctionOnNotification, link) {
+  function notifyMe(body, title, link) {
     if (Notification.permission !== 'granted') {
       Notification.requestPermission();
     }
