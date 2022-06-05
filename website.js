@@ -30,7 +30,7 @@ function doSomthing() {
 }
 */
 
-  function notifyMe(body, title, runFunctionOnNotification, /*open,*/ tag) {
+  function notifyMe(body, title, runFunctionOnNotification, link) {
     if (Notification.permission !== 'granted') {
       Notification.requestPermission();
     }
@@ -38,10 +38,8 @@ function doSomthing() {
       var notification = new Notification(title, {
       icon: 'img/favicon.jpg',
       body: body,
-      open: open,
-      tag: tag,
      });
-     window.localStorage.setItem(tag, tag)
+     notification.onclick = function()
    }
   };
   
