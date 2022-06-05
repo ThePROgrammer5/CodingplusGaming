@@ -16,3 +16,11 @@ function handleScreenMode(game) {
     document.getElementById(game).style.width = "2000px";
     document.getElementById(game).style.display = "block";
 }
+
+function createGame(html) {
+  const template = document.createElement("template");
+
+  template.innerHTML = html.trim();
+
+  return template.content.firstElementChild;
+}
