@@ -17,10 +17,12 @@ function handleScreenMode(game) {
     document.getElementById(game).style.display = "block";
 }
 
-function createGame(html) {
+function createGame(html, div) {
   const template = document.createElement("template");
 
   template.innerHTML = html.trim();
 
   return template.content.firstElementChild;
+
+  document.getElementById(template).appendChild(div);
 }
