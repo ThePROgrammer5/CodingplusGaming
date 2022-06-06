@@ -1,3 +1,7 @@
+* {
+  background-image: linear-gradient(blue, green);
+}
+
 iframe {
   position: absolute;
   top: 0; 
