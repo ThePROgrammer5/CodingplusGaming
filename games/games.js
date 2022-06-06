@@ -17,12 +17,13 @@ function handleScreenMode(game) {
     document.getElementById(game).style.display = "block";
 }
 
-function createGame(html, div) {
-  const template = document.createElement("template");
+function createGame(src, div, sty, id) {
+  const iframe = document.createElement("iframe");
+  iframe.innerHTML = html.trim();
 
-  template.innerHTML = html.trim();
+  iframe.setAttribute('src', src);
+  iframe.setAttribute('style', sty);
+  iframe.setAttribute('id', id);
 
-  return template.content.firstElementChild;
-
-  document.getElementById(div).appendChild(template);
+  document.getElementById(div).appendChild(iframe);
 }
