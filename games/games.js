@@ -21,9 +21,10 @@ function createGame(src, div, sty, id) {
   const iframe = document.createElement("iframe");
   iframe.innerHTML = html.trim();
 
-  iframe.setAttribute('src', src);
+  iframe.setAttribute('src', "https://" + src);
   iframe.setAttribute('style', sty);
   iframe.setAttribute('id', id);
+  iframe.setAttribute('class', game);
 
   document.getElementById(div).appendChild(iframe);
 }
