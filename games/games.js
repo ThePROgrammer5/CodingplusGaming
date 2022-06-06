@@ -24,5 +24,5 @@ function createGame(html, div) {
 
   return template.content.firstElementChild;
 
-  document.getElementById(template).appendChild(div);
+  document.getElementById(div).appendChild(template);
 }
