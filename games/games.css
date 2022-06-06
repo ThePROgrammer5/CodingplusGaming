@@ -6,6 +6,14 @@ iframe {
   height: 100%;
 }
 
+.new {
+  position: relative;
+  left: 2;
+  top: 2;
+  width: 50%;
+  height: 200px;
+}
+
 .new::after {
   content: url(new.png);
   width: 10px;
