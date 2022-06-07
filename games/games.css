@@ -8,25 +8,22 @@
   background-image: linear-gradient(135deg, #5BE7FA 19%, #4AF800 100%);
 }
 
-.playGame {
-	background-image: linear-gradient(135deg, #5BE7FA 19%, #4AF800 100%);
-    width: 100%;
-    height: 100%;
-}
-
-.playGame:hover {
-	background-image: linear-gradient(315deg, #5BE7FA 19%, #4AF800 100%);
+.gameImg {
 	
-    width: 100%;
-    height: 100%;
 }
 
 .gameName {
+	position: absolute;
+    left: 68%;
+    top: 5%;
 	color: white;
     font-weight: bold;
 }
 
 .playNow {
+	position: absolute;
+    left: 68%;
+    top: 5%;
 	border: 3px solid black;
 	background-image: linear-gradient(135deg, red 19%, blue 100%);
 	width: 200px;
