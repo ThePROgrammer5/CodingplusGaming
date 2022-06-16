@@ -27,16 +27,17 @@
 }
 
 .playNow {
+  cursor: pointer;
 	position: absolute;
-    left: 54%;
-    top: 15%;
+  left: 54%;
+  top: 15%;
 	border: 3px solid black;
 	background-image: linear-gradient(135deg, red 19%, blue 100%);
 	width: 200px;
-    height: 80px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: xx-large;
+  height: 80px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: xx-large;
 }
 
 .playNow:hover {
