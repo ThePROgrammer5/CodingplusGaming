@@ -13,6 +13,7 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
+  <div id="all">
       <div id="games" class="tabcontent grid-container">
         <table>
           <tr><td><div class="grid-item new" style="background-image: url(thumb/snakethumb.png); background-size: cover;" id="new" onclick="openCity(event, 'Slither Snake')"><p style="color: red; font-weight: bold; float: left; vertical-align: sub;">Slither Snake</p></div>
@@ -28,7 +29,7 @@
           <h1 style="border-left: 7.5px solid blue; font-size: 50px; background-color: aquamarine; text-align: center; width: 1290px;"><ion-icon name="add-circle"></ion-icon><ion-icon name="game-controller"></ion-icon>More <b>GAMES</b> coming soon!!!</h1>
       </div>
          
-      <div id="Angry Birds" class="tabcontent" hidden>
+      <!--<div id="Angry Birds" class="tabcontent" hidden>
           <iframe id="angrybirdsG" src="https://funhtml5games.com?embed=angrybirds" frameborder="0" scrolling="no" allowfullscreen></iframe>
           <div>
             <button onclick="openCity(event, 'games')" class="backToGames"><b style="vertical-align: bottom;"><ion-icon name="arrow-back-circle"></ion-icon><ion-icon name="game-controller"></ion-icon></b> Back to <b>GAMES</b></button>
@@ -41,20 +42,16 @@
         <div>
           <button onclick="openCity(event, 'games')" class="backToGames"><b style="vertical-align: bottom;"><ion-icon name="arrow-back-circle"></ion-icon><ion-icon name="game-controller"></ion-icon></b> Back to <b>GAMES</b></button>
         </div>
-      </div>
+      </div>-->
 
       <div id="Smash Karts" class="tabcontent" hidden>
-        <div class="playGame">
-          <img class="gameImg" src="">
-          <h2 class="gameName">Smash Karts</h2>
-          <button class="playNow" onclick="createGame('smashkarts.io/', 'Smash Karts')">Play Now!</button>
-        </div>
+        <iframe src="https://smashkarts.io/"></iframe>
         <div>
           <button onclick="openCity(event, 'games')" class="backToGames"><b style="vertical-align: bottom;"><ion-icon name="arrow-back-circle"></ion-icon><ion-icon name="game-controller"></ion-icon></b> Back to <b>GAMES</b></button>
         </div>
       </div>
 
-      <div id="Little Big Snake" class="tabcontent" hidden>
+      <!--<div id="Little Big Snake" class="tabcontent" hidden>
         <iframe src="https://littlebigsnake.com/"></iframe><div>
   <button onclick="openCity(event, 'games')" class="backToGames"><b style="vertical-align: bottom;"><ion-icon name="arrow-back-circle"></ion-icon><ion-icon name="game-controller"></ion-icon></b> Back to <b>GAMES</b></button>
 </div>
@@ -94,7 +91,6 @@
 <div>
   <button onclick="openCity(event, 'games')" class="backToGames"><b style="vertical-align: bottom;"><ion-icon name="arrow-back-circle"></ion-icon><ion-icon name="game-controller"></ion-icon></b> Back to <b>GAMES</b></button>
 </div>
-      </div>
-<div id="bg"></div>
+      </div>-->
 </body>
 </html>
