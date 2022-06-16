@@ -45,9 +45,11 @@
       </div>-->
 
       <div id="Smash Karts" class="tabcontent" hidden>
-        <img class="gameImg">
-        <h1 class="gameName"></h1>
-        <button class="playNow" onclick='createGame("smashkarts.io/")'>Play Now!</button>
+        <div id="playSK">
+          <img class="gameImg">
+          <h1 class="gameName"></h1>
+          <button class="playNow" onclick='createGame("smashkarts.io/", "Smash Karts", "playSK")'>Play Now!</button>
+        </div>
         <div>
           <button onclick="openCity(event, 'games')" class="backToGames"><b style="vertical-align: bottom;"><ion-icon name="arrow-back-circle"></ion-icon><ion-icon name="game-controller"></ion-icon></b> Back to <b>GAMES</b></button>
         </div>

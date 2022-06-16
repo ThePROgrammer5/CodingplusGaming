@@ -17,7 +17,7 @@ function handleScreenMode(game) {
     document.getElementById(game).style.display = "block";
 }
 
-function createGame(src, div, sty, id) {
+function createGame(src, div, hide, sty, id) {
   const iframe = document.createElement("iframe");
   iframe.innerHTML = html.trim();
 
@@ -26,5 +26,6 @@ function createGame(src, div, sty, id) {
   iframe.setAttribute('id', id);
   iframe.setAttribute('class', game);
 
+  document.getElementById(hide).style.display = none; 
   document.getElementById(div).appendChild(iframe);
 }
